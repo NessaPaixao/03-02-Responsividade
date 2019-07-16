@@ -22,11 +22,10 @@ section{
 nav{
     grid-area: nav;
     background-image: url(banner.jpg);
-    color: white
+    color: white;
     font-family:'Mountains of Christmas', cursive;
-    font-size:15pt;
-    font-weight:800;
-
+    font-size: 18pt;
+    
 }
 
 header{
@@ -65,13 +64,12 @@ footer{
                          'header aside aside aside'
                          'header aside aside aside'
                          'footer footer footer footer';
+    }                     
 
 }
 
-nav #mobile a{
-    text-decoration: none;
-    color: white
-    font-family: 'Mountains of Christmas', cursive;
-    font-size: 20pt;
-    font-weight: 800
+.aa{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
