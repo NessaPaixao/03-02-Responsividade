@@ -1,50 +1,77 @@
 body{
     margin: 0;
     display: grid;
-    grid-template-areas: 'nav nav nav nav'
+    grid-template-areas: 'section section section section'
+                         'nav nav nav nav'
                          'header header header header'
                          'aside aside aside aside'
                          'footer footer footer footer';
-    grid-template-rows: 10vh 40vh 40vh 10vh;
+    grid-template-rows: 15vh 10vh 20vh 40vh 10vh;
 }
 
+section{
+    grid-area: section;
+    background-image: url(banner.jpg);
+    color: silver;
+    font-size: 50px;
+    font-family: 'Mountains of Christmas', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 nav{
     grid-area: nav;
-    background-color: brown;
+    background-image: url(banner.jpg);
+    color: white
+    font-family:'Mountains of Christmas', cursive;
+    font-size:15pt;
+    font-weight:800;
+
 }
 
 header{
     grid-area: header;
-    background-color: coral;
+    background-color: white;
 }
 
 aside{
     grid-area: aside;
-    background-color:chocolate;
+    background-image: url(foto.jpg);
+    background-position: center;
+    background-size: cover;
+
 }
 
 footer{
     grid-area: footer;
-    background-color: blueviolet;
+    background-image: url(banner.jpg);
 }
 
 @media(min-width:728px){
     body{
-        grid-template-areas: 'nav nav nav aside'
-                         'header header header aside'
-                         'header header header aside'
-                         'footer footer footer aside';
+        grid-template-areas: 'section section section section' 
+                             'nav nav nav aside'
+                             'header aside aside aside'
+                             'header aside aside aside'
+                             'footer footer footer aside';
     }
 
 }
 
 @media(min-width:1024px){
     body{
-        grid-template-areas: 'nav nav nav nav '
-                         'header header footer aside'
-                         'header header footer aside'
-                         'header header footer aside';
-    }
+        grid-template-areas: 'section section section section'
+                         'nav nav nav nav'
+                         'header aside aside aside'
+                         'header aside aside aside'
+                         'footer footer footer footer';
 
 }
 
+nav #mobile a{
+    text-decoration: none;
+    color: white
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 20pt;
+    font-weight: 800
+}
